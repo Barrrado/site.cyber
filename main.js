@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
         item.classList.contains("active")
       );
       showItem((index + 1) % items.length);
-    }, 2000); // Altere o intervalo de tempo (em milissegundos) conforme necessário
+    }, 3000); // Altere o intervalo de tempo (em milissegundos) conforme necessário
   }
 
   // Event listeners for buttons
