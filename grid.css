@@ -356,6 +356,7 @@
     padding-top: 20px;
   }
   }
+  /*
 @media only screen and (max-width: 320px) {
   .grid-template-areas-4 {
     grid-template-columns: 4fr;
@@ -395,11 +396,72 @@
   .btn-buscar {
     margin-left: 5px;
   }
-}
-@media only screen and (max-width: 321px) {
+}*/
+@media only screen and (max-width: 320px) {
   body {
-    width: 100%;
-    max-width: 100%;  
-    margin: 0 auto; 
-    box-sizing: border-box;
-  }}
+    grid-template-rows: auto; /* Ajustar conforme necessário */
+  }
+  .grid-1 {
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto; /* Ajustar conforme necessário */
+  }
+.h2-2{
+  top: 200px;
+}
+.menu {
+  flex-direction: column; /* Alinhar itens verticalmente */
+  padding-left: 0;
+  padding-top: 0;
+  clip-path: none; /* Remover clip-path para telas pequenas */
+  font-size: 16px; /* Reduzir o tamanho da fonte */
+}
+.conteudo1 {
+  grid-template-columns: 100%; /* Uma coluna para telas pequenas */
+  grid-template-rows: auto; /* Ajustar conforme necessário */
+  height: auto; /* Remover altura fixa */
+  padding: 10px; /* Adicionar padding para espaçamento */
+}
+article.grid-sobre-loja {
+  width: 90%; /* Reduzir a largura */
+  font-size: large; /* Reduzir o tamanho da fonte */
+  padding: 5px; /* Reduzir o padding */
+}
+.conteudo2 {
+  grid-template-columns: 100%; /* Uma coluna para telas pequenas */
+  grid-template-rows: repeat(6, 348px); /* Ajustar conforme necessário */
+  height: auto; /* Remover altura fixa */
+  bottom: 0; /* Remover posicionamento relativo */
+}
+.iten1, .iten2, .iten3, .iten4, .iten5, .iten6 {
+  grid-column: 1; /* Todos os itens em uma coluna */
+  grid-row: auto; /* Ajustar conforme necessário */
+}
+.sidenav {
+  grid-row: auto; /* Ajustar conforme necessário */
+  height: auto; /* Remover altura fixa */
+  bottom: 0; /* Remover posicionamento relativo */
+  padding: 10px; /* Adicionar padding para espaçamento */
+}
+footer {
+  width: 100%; /* Ajustar para 100% da largura */
+  bottom: 0; /* Remover posicionamento relativo */
+  padding: 10px; /* Adicionar padding para espaçamento */
+  top: 347px;
+}
+.btn-saiba {
+  width: 100%; /* Ajustar para 100% da largura */
+  font-size: 14px; /* Reduzir o tamanho da fonte */
+  padding: 5px; /* Reduzir o padding */
+}
+.img-anuncio {
+  width: 100%; /* Ajustar para 100% da largura */
+  height: auto; /* Manter a proporção */
+}
+h4 {
+  font-size: 16px ; /* Reduzir o tamanho da fonte */
+}
+
+.caption {
+  font-size: 24px; /* Reduzir o tamanho da fonte */
+}
+}
