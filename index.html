@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt" >
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./grid.css">
+  <link rel="stylesheet" href="./grid1.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.js">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <title>Cyber car</title>
+</head>
+<body id="corpo1">
+  <header>
+    <div class="conteiner">
+      <h1>Cyber Car</h1>
+      <form>
+        <input type="search" placeholder="Busque aqui! ">
+        <button class="bto-buscar" type="submit"> BUSCAR</button>
+      </form>
+    </div>
+    <button class="icon" id="menuButton">
+      MENU
+    </button>
+    <nav id="menuNav">
+      <ul id="Menu1" class="menu ">
+        <li style="padding-top: 5px;">NOVIDADES
+          <ul class="submenu">
+            <li><button class="bto-menu">CLASSICOS</button> </li>
+            <li><button class="bto-menu">VOADORES</button></li>
+            <li><button class="bto-menu">ALTA PERFORMANCE</button></li>
+          </ul>
+        </li>
+        <li style="padding-top: 5px;">OFERTAS
+          <ul class="submenu">
+            <li><button class="bto-menu">PROMOCOES</button></li>
+            <li><button class="bto-menu">PARCELAMENTO</button></li>
+            <li><button class="bto-menu">COMPRE AGORA</button></li>
+          </ul>
+        </li>
+        <li style="padding-top: 5px;">LOCAIS DE COMPRA</li>
+        <li class="btn-login">LOGIN</li>
+      </ul>
+  </header>
+  </div class="content0">
+  <div class="carousel-container">
+    <div class="carousel">
+      <div class="item active">
+        <img src="./paul-breshke-czyzewski-11.jpg" alt="Image 1" />
+        <p class="caption">CZYEWSHIKI</p>
+      </div>
+      <div class="item">
+        <img src="./pawel-breshke-czyzewski-artist-template-blackrazor.jpg" alt="Image 2" />
+        <p class="caption">BLACKRAZOR</p>
+      </div>
+      <div class="item">
+        <img src="./paul-breshke-czyzewski-pom-4.jpg" alt="Image 3" />
+        <p class="caption">CALIBURN</p>
+      </div>
+      <div class="item">
+        <img src="./pawel-breshke-czyzewski-mizutani-shion-mz2-2.jpg" />
+        <p class="caption">MIZUTANI SHION</p>
+      </div>
+      <div class="item">
+        <img src="./pawel-breshke-czyzewski-4ps.jpg" alt="Image 3" />
+        <p class="caption">LUX 30P</p>
+      </div>
+    </div>
+    <button class="btn prev" id="bto-prev">Prev</button>
+    <button class="btn next" id="bto-next">Next</button>
+    <div class="dots"></div>
+  </div>
+  <main class="grid-1">
+      <div class="conteudo1">
+        <div class="conteiner1">
+        <img class="img-loja" src="./images.jpg" style="display: grid; grid-column:1;">
+        </div>
+        <article class="grid-sobre-loja">
+          <h2 class="h2-1"> Nossa loja</h2>
+         Localizada no coração da cidade ela conta com tudo o que vc precisa em UPGRADES, MANUTENÇÃO E MONTAGEM de 
+         veiculos das mais diversas marcas. Entre em contato conosco e agende sua visita. <a href="#"   style="color: yellow;">Saiba mais</a>
+        </article>
+      </div>
+      </div>
+      <div class="conteudo2">
+        <h1 class="h2-2">
+          CARROS EM PROMOÇÃO
+        </h1>
+        <div class="galeria-modal">
+          <div class="modal-content">
+          <img src="" alt="Foto do carro" >
+          <button class="fechar-btn" onclick="fecharGaleria()">X</button>
+        </div>
+      </div> 
+        <div class=" itens iten1">
+          <div class="teste-grid">
+            <img class="img-anuncio" src="./site2/Forza-Horizon-4-Cyberpunk-2077-1-800x445.jpg"  onclick="abrirGaleria(`./site2/Forza-Horizon-4-Cyberpunk-2077-1-800x445.jpg`)">
+            <div class="teste-grid2">
+              <h4>TS MONADE</h4>
+              Um carro simples,para situações simples e ecomononico.
+                </div>
+           <div class="teste-grid3">
+              <button class="btn-saiba" type="button" >
+                SAIBA MAIS</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="itens iten2">
+          <div class="teste-grid">
+            <img class="img-anuncio" src="./site2/957rm0igemy81.webp" onclick="abrirGaleria(`./site2/957rm0igemy81.webp`)">
+            <div class="teste-grid2">
+              <h4>RAYFILED EXCAILBUR</h4>
+             Elegancia e sofisticão , o Rayfield Excalibur é um carro de luxo que oferece uma experiência de cair o queixo. 
+             Com seu design inovador e tecnologia de ponta, ele é o carro
+                </div>
+           <div class="teste-grid3">
+              <button class="btn-saiba" type="button" >
+                SAIBA MAIS</button>
+            </div>
+          </div>
+        </div>
+        <div class="itens iten3">
+          <div class="teste-grid">
+            <img class="img-anuncio" src="./site2/Aq4eq4u.jpg" onclick="abrirGaleria(`./site2/Aq4eq4u.jpg`)">
+            <div class="teste-grid2">
+              <h4>QUADRA CHUTLHU</h4>
+                É de Velociade que vc precisa? O Quadra Chutlhu é um carro de alta velocidade e alta PERFORMANCE para quem busca a adrenalina.
+                </div>
+           <div class="teste-grid3">
+              <button class="btn-saiba" type="button" >
+                SAIBA MAIS</button>
+            </div>
+          </div>
+        </div>
+        <div class="itens iten4">
+          <div class="teste-grid">
+            <img class="img-anuncio" src="./site2/asokcg6gemy81.webp" onclick="abrirGaleria(`./site2/asokcg6gemy81.webp`)">
+            <div class="teste-grid2">
+              <h4>IMPERADOR CHEVILLION</h4>
+             Para quem gosta de um carro robusto e com um design único, o Imperador Chevillion é uma ótima escolha.
+                </div>
+           <div class="teste-grid3">
+              <button class="btn-saiba" type="button" >
+                SAIBA MAIS</button>
+            </div>
+          </div>
+        </div>
+        <div class=" itens iten5">
+          <div class="teste-grid">
+            <img class="img-anuncio" src="./site2/cyberpunk-2077-carro.jpg" onclick="abrirGaleria(`./site2/cyberpunk-2077-carro.jpg`)">
+            <div class="teste-grid2">
+              <h4>QAUDRA TS 66</h4>
+            <span>Descrição</span>  Esse o carro que vc estava esperando!! Com Turbo tração nas 4 rodas, com rodas de liga de titanio.
+                </div>
+           <div class="teste-grid3">
+              <button class="btn-saiba" type="button" >
+                SAIBA MAIS</button>
+            </div>
+          </div>
+        </div>
+        <div class="itens iten6">
+          <div class="teste-grid">
+            <img class="img-anuncio"  src="./site2/zgxzoqoec5y81.webp"  onclick="abrirGaleria(`./site2/zgxzoqoec5y81.webp`)">
+            <div class="teste-grid2">
+              <h4>DIAMANTE NEGRO</h4>
+             Como o nome ja diz, é um carro de luxo, com design único contando com superblidagem e alta tecnologia de segurança e automação!
+                </div>
+           <div class="teste-grid3">
+              <button class="btn-saiba" type="button" >
+                SAIBA MAIS</button>
+            </div>
+          </div>
+        </div>
+    </div>
+       <div class="sidenav" >
+          <h4 class="h4-2">FALE CONOSCO</h4>
+          <h4 class="Nome1"  >NOME</h4>
+          <input class="Nome2"   type="text"   placeholder="Nome" name="nome" required>
+          <h4 class="email1 h4-1" >EMAIL</h4>
+          <input class="email2" type="email" placeholder="email" required>
+          <h4 class="tel1 h4-1">TELEFONE</h4>
+          <input class="tel2"  type="tel" placeholder="Telefone" required>
+          <h4 class="end1 h4-1">Endereço</h4>
+          <input  class="end2" type="text" placeholder="Endereço" required>
+          <h4 class="mensagem1  h4-1">MENSAGEM</h4>
+          <textarea class="mensagem2" ></textarea> 
+          <button  class="bto-buscar" id="bto-enviar" type="submit">ENVIAR</button>
+        </div>
+  </main>
+  <footer>
+      <div class="footer-content">
+      <h4 class="h4-3">@Este site e sobre uma loja ficcticia de carros.</h4> 
+        <h4 class="h4-3">@Todos os direitos reservados.</h4>
+      </div>
+      <div class="footer-content1">
+       <h4 class="h4-3">SOBRE A LOJA</h4>         
+      <video></video>
+      </div>
+  </footer>
+</body>
+
+  </scrip>
+  <script src="./main.js"></script>
+</html>
