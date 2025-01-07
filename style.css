@@ -7,7 +7,7 @@
   grid-row: 2;
   z-index: 0;
   display: grid;
-
+}
   .carousel {
     width: 100%;
     position: relative;
@@ -100,7 +100,6 @@
       }
     }
   }
-}
 
 #bto-prev {
   left: 0;
@@ -133,3 +132,9 @@
     font-size: 50px;
   }
 }
+@media only screen and (max-width:640px) {
+  .corousel-container {
+    max-width:640px;
+    top: 23px;
+    }
+  }

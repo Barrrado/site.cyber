@@ -46,41 +46,58 @@
 @media only screen and (max-width:640px) {
   body{
     grid-template-rows: 154px 458px auto 41px;
+    max-width: 640px;
   }
       .grid-1 {
           display: grid;
           grid-template-columns: 100%;
-          grid-template-rows: 37% 84.4% 50%;
+          grid-template-rows: 47% 84.4% 50%;
+          max-width:640px; 
           width: 100%;
+          top: 2px;
       }
       .menu li:hover .submenu {
         display: contents;
+    }
+    .corousel-container{
+      max-width:640px;
+      top: 23px;
     }
   .conteudo1 {
       background-image: url(./thumb-1920-1330766.png);
       background-size: cover;
       display: grid;
-      grid-template-columns: 52%;
-      grid-template-rows: 290px;
+      row-gap: 23px;
+      grid-template-columns: 50%;
+      grid-template-rows: 1fr 3fr;
       justify-items: center;
       align-items: center;
       justify-content: center;
       position: relative;
       height: 45.6%;
-      
+      width: 100%;
   }
-  article.grid-sobre-loja {
-      background-color: rgba(253, 8, 8, 0.514);
-      backdrop-filter: blur(20px);
-      border: 1px solid rgb(255, 171, 14);
-      border-radius: 20px;
-      width: 400px;
-      position: relative;
-      padding: 10px 10px;
-      margin-right: 0px;
-      grid-column: 1;
-      font-size: x-large;
-  }
+  img.img-loja {
+  display: grid;
+  grid-column: 1;
+  padding-top: 7px;
+  padding-bottom: 0px;
+  margin-top: 9px;
+ }
+ article.grid-sobre-loja {
+  background-color: rgba(253, 8, 8, 0.514);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgb(255, 171, 14);
+  border-radius: 20px;
+  width: fit-content;
+  position: relative;
+  bottom: 10px;
+  padding: 10px 10px;
+  margin-right: 0px;
+  grid-column: 1;
+  bottom: 10px;
+  font-size: x-large;
+}
   .conteudo2{
       display: grid;
       grid-template-columns: repeat(2, 344px);
@@ -90,39 +107,49 @@
       justify-content: center;
       justify-items: center;
       height: 1340px;
-      bottom: 550px;
+      bottom: 703px;
       position: relative;
+      max-width: 100%;
+      width: 100%;
   }
   .iten1{
       grid-column: 1;
       grid-row: 1;
+      bottom: -33px;
   }
   .iten2{
       grid-column: 2;
       grid-row: 1;
       z-index: 2;
+      bottom: -33px;
   }
   .iten3{
       grid-column: 1;
       grid-row: 2;
+      bottom: -33px;
   
   }
   .iten4{
       grid-column: 2;
       grid-row: 2;
+      bottom: -33px;
   }
   .iten5{
       grid-column: 1;
       grid-row: 3;
+      bottom: -33px;
   }
   .iten6{
       grid-column: 2;
       grid-row: 3;
+      bottom: -33px;
+      
   }
   
   .itens{
       grid-template-rows: repeat(3 , 1fr);
       display: grid;
+      position: relative;
   }
   .teste-grid{
       background-color: rgba(240, 255, 255, 0.411);
@@ -195,7 +222,7 @@
       justify-items: center;
       grid-row: 1;
       position: relative;
-      top: -122px;
+      top: -80px;
       z-index: 1;
       width: 559px;
       height: 100px;
@@ -215,7 +242,7 @@
     height: 70.5%;
     position: relative;
     z-index: 2;
-    bottom: 1510px;
+    bottom: 1712px;
   }
     footer {
       display: grid;
@@ -225,40 +252,11 @@
       grid-row: 6;
       position: relative;
       z-index: 1;
-      width: 1166px;
-      bottom: 3px;
+      max-width: 640px;
+      top: 79px;
       justify-items: center;
     }
-  .conteudo1{
-      background-image: url(./thumb-1920-1330766.png);
-      background-size: cover;
-      display: grid;
-      grid-template-columns: 50%;
-      grid-template-rows: 1fr 3fr;
-      justify-items: center;
-      align-items: center;
-      justify-content: center;
-    }
-    img.img-loja {
-    display: grid;
-    grid-column: 1;
-    padding-top: 7px;
-    padding-bottom: 0px;
-    margin-top: 9px;
-   }
-   article.grid-sobre-loja {
-    background-color: rgba(253, 8, 8, 0.514);
-    backdrop-filter: blur(20px);
-    border: 1px solid rgb(255, 171, 14);
-    border-radius: 20px;
-    width: fit-content;
-    position: relative;
-    bottom: 10px;
-    padding: 10px 10px;
-    margin-right: 0px;
-    grid-column: 1;
-    bottom: 10px;
-}
+
   .caption {
     font-size: 28px;
   }
@@ -302,7 +300,7 @@
         position: absolute;
         justify-content: flex-start;
         left: 0px;
-        top: 155px;
+        top: 184px;
   }
 
   .cut1 {
@@ -349,13 +347,24 @@
       padding-left: 0;
       padding-right: 0;
       padding-bottom: 0;
+      max-width: 640px;
   }
   .footer-content1 {
-    max-width: 320px;
+    max-width: 640px;
     flex-direction: column;
     padding-top: 20px;
   }
+  .bto-buscar{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 38px;
+}
+#bto-enviar{
+  TOP: 358px;
+  right: 17px;
+}
   }
+
   /*
 @media only screen and (max-width: 320px) {
   .grid-template-areas-4 {
@@ -397,16 +406,18 @@
     margin-left: 5px;
   }
 }*/
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 400px) {
   body {
     grid-template-rows: auto; /* Ajustar conforme necessário */
   }
   .grid-1 {
+    max-width: auto;
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto; /* Ajustar conforme necessário */
   }
 .h2-2{
-  top: 200px;
+  top: 60px;
+  max-width: 400px;
 }
 .menu {
   flex-direction: column; /* Alinhar itens verticalmente */
@@ -428,7 +439,81 @@ article.grid-sobre-loja {
 }
 .conteudo2 {
   grid-template-columns: 100%; /* Uma coluna para telas pequenas */
-  grid-template-rows: repeat(6, 348px); /* Ajustar conforme necessário */
+  max-width: 400px;
+  grid-template-rows: 188px 344px 344px 344px 344px 344px 354px; /* Ajustar conforme necessário */
+  height: auto; /* Remover altura fixa */
+  bottom: 0; /* Remover posicionamento relativo */
+}
+.iten1, .iten2, .iten3, .iten4, .iten5, .iten6 {
+  grid-column: 1; /* Todos os itens em uma coluna */
+  grid-row: auto; /* Ajustar conforme necessário */
+  bottom: 5px;
+}
+.sidenav {
+  grid-row: auto; /* Ajustar conforme necessário */
+  height: auto; /* Remover altura fixa */
+  bottom: 0; /* Remover posicionamento relativo */
+  padding: 10px; /* Adicionar padding para espaçamento */
+}
+footer {
+  width: 100%; /* Ajustar para 100% da largura */
+  bottom: 0; /* Remover posicionamento relativo */
+  padding: 10px; /* Adicionar padding para espaçamento */
+  top: 347px;
+}
+.btn-saiba {
+  width: 100%; /* Ajustar para 100% da largura */
+  font-size: 14px; /* Reduzir o tamanho da fonte */
+  padding: 5px; /* Reduzir o padding */
+}
+.img-anuncio {
+  width: 100%; /* Ajustar para 100% da largura */
+  height: auto; /* Manter a proporção */
+}
+h4 {
+  font-size: 16px ; /* Reduzir o tamanho da fonte */
+}
+
+.caption {
+  font-size: 24px; /* Reduzir o tamanho da fonte */
+}
+}
+
+@media only screen and (max-width: 320px) {
+  body {
+    grid-template-rows: auto; /* Ajustar conforme necessário */
+  }
+  .grid-1 {
+    max-width: 320px;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto; /* Ajustar conforme necessário */
+  }
+.h2-2{
+  top: 60px;
+  max-width: 320px;
+}
+.menu {
+  flex-direction: column; /* Alinhar itens verticalmente */
+  padding-left: 0;
+  padding-top: 0;
+  clip-path: none; /* Remover clip-path para telas pequenas */
+  font-size: 16px; /* Reduzir o tamanho da fonte */
+}
+.conteudo1 {
+  grid-template-columns: 100%; /* Uma coluna para telas pequenas */
+  grid-template-rows: auto; /* Ajustar conforme necessário */
+  height: auto; /* Remover altura fixa */
+  padding: 10px; /* Adicionar padding para espaçamento */
+}
+article.grid-sobre-loja {
+  width: 90%; /* Reduzir a largura */
+  font-size: large; /* Reduzir o tamanho da fonte */
+  padding: 5px; /* Reduzir o padding */
+}
+.conteudo2 {
+  grid-template-columns: 100%; /* Uma coluna para telas pequenas */
+  max-width: 320px;
+  grid-template-rows: 188px 344px 344px 344px 344px 344px 354px; /* Ajustar conforme necessário */
   height: auto; /* Remover altura fixa */
   bottom: 0; /* Remover posicionamento relativo */
 }
