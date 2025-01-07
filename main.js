@@ -71,6 +71,15 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
+  // Function to automatically move to the next item
+  function startAutoCarousel() {
+    setInterval(() => {
+      let index = [...items].findIndex((item) =>
+        item.classList.contains("active")
+      );
+      showItem((index + 1) % items.length);
+    }, 2000); // Altere o intervalo de tempo (em milissegundos) conforme necessário
+  }
 
   // Event listeners for buttons
   document.querySelector(".prev").addEventListener("click", () => {
@@ -94,4 +103,6 @@ document.addEventListener("DOMContentLoaded", function () {
       showItem(index);
     });
   });
-});
+    // Start the automatic carousel
+    startAutoCarousel();
+  });
